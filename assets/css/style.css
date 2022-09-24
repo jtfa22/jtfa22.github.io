@@ -532,6 +532,7 @@ main {
   /* background-color: var(--bg-gradient-jet); */
   background-blend-mode: darken;
   background-size: cover;
+  background-position: center;
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
