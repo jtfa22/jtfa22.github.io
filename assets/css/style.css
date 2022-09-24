@@ -50,8 +50,10 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    #027dc4,
+    #005587
+    /* hsl(45, 100%, 72%), 
+    hsl(35, 100%, 68%) */
   );
 
   /* solid */
@@ -63,8 +65,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --orange-yellow-crayola: #027dc4; /*hsl(45, 100%, 72%);*/
+  --vegas-gold: #005587; /*hsl(45, 54%, 58%);*/
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -349,7 +351,6 @@ main {
   background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
-  width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
 }
@@ -525,6 +526,10 @@ main {
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
+  background-color: rgba(0,0,0,0.6);
+  /* background-color: var(--bg-gradient-jet); */
+  background-blend-mode: darken;
+  background-size: cover;
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -535,7 +540,7 @@ main {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  /* background:  */
   border-radius: inherit;
   z-index: -1;
 }
@@ -1362,10 +1367,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contacts-list { gap: 20px; }
 
-  .contact-info {
-    max-width: calc(100% - 64px);
-    width: calc(100% - 64px);
-  }
 
 
 
