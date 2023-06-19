@@ -525,6 +525,12 @@ main {
   gap: 20px;
 }
 
+.service-list-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
