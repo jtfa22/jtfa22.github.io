@@ -80,7 +80,7 @@
             The controls objective is to fly a straight line trajectory maintaining the rocket's attitude from launch and counteract aerodynamic disturbances.
             </p>
             <p>
-            Personally responsible for the controls design and implementation, electronics assembly and manufacturing, and flight software and testing.
+            Personally responsible for the entire controls design and implementation, electronics assembly and manufacturing, and flight software and testing.
             </p>
 
         <h3 class="h3 service-title">CDR Presentation</h3>
@@ -94,22 +94,34 @@
           </div>
         </section>
         <section class="about-text">
-        <h3 class="h3 service-title">Testing</h3>
-        <div style="width: 65%; margin:auto;" class="service-list">
-            <div>
-                <img src="./assets/img/bfr_active.gif" style="object-fit: cover; width: 100%; max-height: 100%;">
-            </div>
-            <div>
-                <div style="margin:auto; max-height: 100%;">
-                    <div style="position: relative; padding-bottom: 177.78%; max-height: 100%;">
-                        <iframe style="border: 1; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" 
-                                src="https://drive.google.com/file/d/1-UhlS11IYcLZvRfKb5U7dDSSAgs0OWy9/preview" 
-                                title="Google Drive Embed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; mute" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+          <h3 class="h3 service-title">Controls Scheme</h3>
+          <p>
+            The control scheme was implemented with a estimator-controller-mixer-actuator based approach. 
+            The estimator utilized a Madgwick AHRS Filter that fused gyroscope, accelerometer, and magnetometer measurements.
+            The controller implemented a quaternion based PD-controller with experimental tuning.
+            The mixer used inverse-kinematics to map outputs to the 3 fins.
+          </p>
+          <div style="width: 65%; margin:auto;">
+              <img src="./assets/img/bfr_block.png" style="object-fit: cover; width: 100%; max-height: 100%;">
+          </div>
+        </section>
+        <section class="about-text">
+          <h3 class="h3 service-title">Testing</h3>
+          <div style="width: 65%; margin:auto;" class="service-list">
+              <div>
+                  <img src="./assets/img/bfr_active.gif" style="object-fit: cover; width: 100%; max-height: 100%;">
+              </div>
+              <div>
+                  <div style="margin:auto; max-height: 100%;">
+                      <div style="position: relative; padding-bottom: 177.78%; max-height: 100%;">
+                          <iframe style="border: 1; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" 
+                                  src="https://drive.google.com/file/d/1-UhlS11IYcLZvRfKb5U7dDSSAgs0OWy9/preview" 
+                                  title="Google Drive Embed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; mute" allowfullscreen>
+                          </iframe>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </section>
 
 
